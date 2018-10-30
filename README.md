@@ -7,6 +7,8 @@
 - `M`eg Myers
 - `R`achel Busch
 
+...
+
 ## Dependencies ##
 
 ### Extensions ###
