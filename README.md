@@ -7,7 +7,7 @@
 - `M`eg Myers
 - `R`achel Busch
 
-... ...
+something else
 
 ## Dependencies ##
 
