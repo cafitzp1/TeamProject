@@ -7,10 +7,6 @@
 - `M`eg Myers
 - `R`achel Busch
 
-something else
-now this
-and that
-
 ## Dependencies ##
 
 ### Extensions ###
