@@ -2,10 +2,10 @@
 
 ## B11-JCMR ##
 
-- `J`ared Mole
+- `J`...
 - `C`onnor Fitzpatrick
-- `M`eg Myers
-- `R`achel Busch
+- `M`...
+- `R`...
 
 ## Dependencies ##
 
@@ -19,7 +19,7 @@
 - TODO Highlight
 - Markdown All In One
 
-## File Structure ##
+## App File Structure ##
 
 ```txt
 .
