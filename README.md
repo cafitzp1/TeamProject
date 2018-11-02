@@ -2,10 +2,10 @@
 
 ## B11-JCMR ##
 
-- `J`...
+- `J`ared Mole
 - `C`onnor Fitzpatrick
 - `M`eg Myers
-- `R`...
+- `R`achel Busch
 
 ## Dependencies ##
 
