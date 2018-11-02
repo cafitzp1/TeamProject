@@ -19,7 +19,7 @@
 - TODO Highlight
 - Markdown All In One
 
-## File Structure ##
+## App File Structure ##
 
 ```txt
 .
