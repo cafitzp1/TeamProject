@@ -12,12 +12,12 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button w3-wide">Slickables</a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-question"></i> FAQ</a>
         <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-shopping-cart"></i> Menu</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+        <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -80,16 +80,16 @@
     </div>
     <div class="w3-row-padding w3-center">
       <div class="w3-third">
-        <button class="w3-button w3-red" style="width:50%; margin: 10px;">Order With GRUBHUB</button>
-        <button class="w3-button w3-black" style="width:50%; margin: 10px;">ORDER ON UBER EATS</button>
+        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-button w3-black order-btn">ORDER ON UBER EATS</button>
       </div>
       <div class="w3-third">
-        <button class="w3-button w3-red" style="width:50%; margin: 10px;">Order With GRUBHUB</button>
-        <button class="w3-button w3-black" style="width:50%; margin: 10px;">ORDER ON UBER EATS</button>
+        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-button w3-black order-btn">ORDER ON UBER EATS</button>
       </div>
       <div class="w3-third">
-        <button class="w3-button w3-red" style="width:50%; margin: 10px;">Order With GRUBHUB</button>
-        <button class="w3-button w3-black" style="width:50%; margin: 10px;">ORDER ON UBER EATS</button>
+        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-button w3-black order-btn">ORDER ON UBER EATS</button>
       </div>
     </div>
   </div>
@@ -109,29 +109,7 @@ slickables@slickables.com
 COPYRIGHT 2017
     </pre>
   </footer>
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
+  <script src="./scripts/w3responsive.js"></script>
 </body>
 
 </html>

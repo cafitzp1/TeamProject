@@ -40,3 +40,21 @@ html {
 .w3-row-padding>.w3-col {
     padding: 0 14px
 }
+
+.field-block {
+    min-height: 22rem;
+    max-width: 100%;
+    background-color: #eeeeee;
+    border: 2px solid transparent;
+    outline: none;
+    border: .2s ease-in-out;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-btn {
+    width:50%;
+    margin: 10px;
+    min-width: 180px;
+}
