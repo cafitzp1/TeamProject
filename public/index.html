@@ -1,144 +1,148 @@
 <!DOCTYPE html>
 <html>
-<title>College Care</title>
+<title>Slickables</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="./images/college-care-logo.png" />
+<link rel="shortcut icon" type="image/png" href="./images/logo.png" />
 <link rel="stylesheet" href="./styles/w3.css">
 <link rel="stylesheet" href="./styles/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-black w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">JCMR</a>
-            <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small">
-                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
-                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> SHOP</a>
-            </div>
-            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Slickables</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-question"></i> FAQ</a>
+        <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-shopping-cart"></i> Menu</a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+  </div>
 
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
-        id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    </nav>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">FAQ</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  </nav>
 
-    <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-        <div class="w3-display-left w3-text-white" style="padding:48px">
-            <span class="w3-jumbo w3-hide-small">College Care</span><br>
-            <span class="w3-xxlarge w3-hide-large w3-hide-medium">College Care</span><br>
-            <span class="w3-large">Carefully selected gifts for your favorite college student!</span>
-            <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn
-                    more and start today</a></p>
-        </div>
-        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <div class="w3-container" style="padding:100px 2px" id="about">
-        <div class="w3-row-padding w3-center">
-            <div class="w3-third">
-                <i class="fa fa-shopping-cart w3-margin-bottom w3-jumbo w3-center"></i>
-                <p class="w3-large">Product Diversity</p>
-                <p>Our suppliers provide our online marketplace with the newest and most popular products for any of your college needs.</p>
-            </div>
-            <div class="w3-third">
-                <i class="fa fa-recycle w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Sustainable</p>
-                <p>All of our products are produced and packaged in green warehouses that are more environmentally friendly than any of our competitors.</p>
-            </div>
-            <div class="w3-third">
-                <i class="fa fa-mobile w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Accessible</p>
-                <p>Our mobile platform makes it easy to access your account from any device.</p>
-            </div>
-        </div>
-        <div class="w3-row-padding w3-center" style="margin-top:32px;">
-            <div class="w3-third">
-                <i class="fa fa-cogs w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Simple Setup</p>
-                <p>Making an account is fast and easy! Once you register you will be able to log in with a username and password in seconds.</p>
-            </div>
-            <div class="w3-third">
-                <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Superior Design</p>
-                <p>Faster and more efficient shipping than any of our competitors. Plus, our relationship with universities means you will never have problems getting your mail.</p>
-            </div>
-            <div class="w3-third">
-                <i class="fa fa-map-marker w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Location Based</p>
-                <p>When you sign up for a College Care account we ask for your school address so you will never have to remind your relatives where you live!</p>
-            </div>
-        </div>
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo">Slickables</span><br>
+      <!-- <span class="w3-xxlarge w3-hide-large w3-hide-medium">Slickables</span><br> -->
+      <span class="w3-large">(480) 409 - 4591</span><br>
+      <span class="w3-large">VISIT OUR STORES OR GET YUMMINESS DELIVERED</span>
+      <p><a href="#" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-disabled">See
+          Menu</a></p>
     </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <p>
-            College Care is your destination for everything related to care packages in college.<br>
-            We are paired with over fifty universities nationwide to help bring students the items they want and need. 
-        </p>
-    </footer>
+  <!-- About Section -->
+  <div class="w3-container" style="padding:20px 2px 80px 2px" id="about">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-text-black">
+        <p class="w3-xlarge">Takeaway Treats</p>
+        <p class="w3-large" style="padding-bottom: 25px;">Dessert delivered to your door by Grubhub, UberEats and Postmates. For Slickables catering,
+          email us directly: slickables@slickables.com</p>
+      </div>
+      <div class="w3-third">
+        <img src="./images/dessert1.jpeg" alt="dessert image" style="width: 100%; height: 270px;">
+        <p class="w3-large">Frozen Party Pack $15</p>
+        <p>Our frozen party pack comes with four ice cream sandwiches. Flavors include double chocolate with mint chip
+          ice cream, a customer favorite.</p>
+      </div>
+      <div class="w3-third">
+        <img src="./images/dessert2.jpeg" alt="dessert image" style="width: 100%;">
+        <p class="w3-large">Freshly Baked Cookies $10</p>
+        <p>Choose a dozen of our cookies which are made from scratch and baked fresh every day and through out the day.</p>
+      </div>
+      <div class="w3-third">
+        <img src="./images/dessert3.jpeg" alt="dessert image" style="width: 100%;">
+        <p class="w3-large">Fudgy Brownies or Caramel Blondies $5</p>
+        <p>One order comes with three brownies or three caramel blondies. </p>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-third">
+        <button class="w3-button w3-red" style="width:50%; margin: 10px;">Order With GRUBHUB</button>
+        <button class="w3-button w3-black" style="width:50%; margin: 10px;">ORDER ON UBER EATS</button>
+      </div>
+      <div class="w3-third">
+        <button class="w3-button w3-red" style="width:50%; margin: 10px;">Order With GRUBHUB</button>
+        <button class="w3-button w3-black" style="width:50%; margin: 10px;">ORDER ON UBER EATS</button>
+      </div>
+      <div class="w3-third">
+        <button class="w3-button w3-red" style="width:50%; margin: 10px;">Order With GRUBHUB</button>
+        <button class="w3-button w3-black" style="width:50%; margin: 10px;">ORDER ON UBER EATS</button>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-margin-top">
+    <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <pre>
+(480) 409-4591
+slickables@slickables.com
+COPYRIGHT 2017
+    </pre>
+  </footer>
 
 
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
 
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-            } else {
-                mySidebar.style.display = 'block';
-            }
-        }
 
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-    </script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
 
 </body>
 

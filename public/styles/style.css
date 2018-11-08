@@ -18,7 +18,7 @@ html {
 .bgimg-1 {
     background-position: initial;
     background-size: cover;
-    background-image: url("../images/ASUnight3.jpg");
+    background-image: url("../images/yummy1.jpeg");
     min-height: 100%;
 }
 
@@ -28,7 +28,7 @@ html {
 
 .w3-button:hover {
     color: #000 !important;
-    background-color: rgb(55, 216, 157) !important
+    background-color: rgb(240,240,240) !important
 }
 
 .w3-row-padding,
