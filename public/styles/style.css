@@ -5,7 +5,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 body,
@@ -28,7 +28,7 @@ html {
 
 .w3-button:hover {
     color: #000 !important;
-    background-color: rgb(240,240,240) !important
+    background-color: rgb(240, 240, 240) !important
 }
 
 .w3-row-padding,
