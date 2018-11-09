@@ -1,29 +1,174 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>JCMR</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="./styles/w3.css">
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
+<title>Slickables</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="./images/logo.png" />
+<link rel="stylesheet" href="./styles/w3.css">
+<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      JCMR
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">Team JCMR's Web App</p>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-question"></i> FAQ</a>
+        <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-shopping-cart"></i> Menu</a>
+        <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">FAQ</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  </nav>
+  <!-- Header with full-height image -->
+  <header class="w3-display-container" id="home">
+    <!-- Slideshow container -->
+    <div class="slideshow-container w3-display-container">
+      <div class="mySlides">
+        <img class="bgimg-1" src="./images/yummy1.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img class="bgimg-1" src="./images/yummy2.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img class="bgimg-1" src="./images/yummy3.jpeg" style="width:100%">
+      </div>
+      <!-- Header text -->
+      <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo">Slickables</span><br>
+        <span class="w3-large">(480) 409 - 4591</span><br>
+        <span class="w3-large">VISIT OUR STORES OR GET YUMMINESS DELIVERED</span>
+        <p><a href="#" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-disabled">See
+            Menu</a></p>
+      </div>
+      <!-- Social media images -->
+      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div class="w3-margin-top" style="text-align:center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </header>
+  <!-- About Section -->
+  <div class="w3-container" style="padding:5px 2px 80px 2px" id="about">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-text-black">
+        <p class="w3-xlarge">Takeaway Treats</p>
+        <p class="w3-large" style="padding-bottom: 25px;">Dessert delivered to your door by Grubhub, UberEats and
+          Postmates. For Slickables catering,
+          email us directly: slickables@slickables.com</p>
+      </div>
 
+      <div class="w3-third">
+        <div class="image-block" data-aspect-ratio="100" data-block-type="5">
+          <div class="block-content">
+            <div class="image-block-outer-wrapper design-layout-inline narrow-width">
+              <div class="intrinsic" style="max-width:2500.0px;">
+                <a href="http://www.ubereats.com" target="_blank">
+                  <div class="block-image-wrapper" style="contain: content; max-height: 5%;">
+                    <img class="thumb-img" src="./images/dessert1.jpeg" alt="dessert image" style="top: -25%;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-center" style="height: 200px; padding: 15px;">
+          <p class="w3-large">Frozen Party Pack $15</p>
+          <p>Our frozen party pack comes with four ice cream sandwiches. Flavors include double
+            chocolate with mint chip
+            ice cream, a customer favorite.</p>
+        </div>
+        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-button w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
+      </div>
+      <div class="w3-third">
+        <div class="image-block" data-aspect-ratio="100" data-block-type="5">
+          <div class="block-content">
+            <div class="image-block-outer-wrapper design-layout-inline narrow-width">
+              <div class="intrinsic" style="max-width:2500.0px;">
+                <a href="http://www.ubereats.com" target="_blank">
+                  <div class="block-image-wrapper">
+                    <img class="thumb-img" src="./images/dessert2.jpeg" alt="dessert image" style="width: 150%; left: -20%;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-center" style="height: 200px; padding: 15px;">
+          <p class="w3-large">Freshly Baked Cookies $10</p>
+          <p>Choose a dozen of our cookies which are made from scratch and baked fresh every day
+            and through out the day.</p>
+        </div>
+        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-button w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
+      </div>
+      <div class="w3-third">
+        <div class="image-block" data-aspect-ratio="100" data-block-type="5">
+          <div class="block-content">
+            <div class="image-block-outer-wrapper design-layout-inline narrow-width">
+              <div class="intrinsic" style="max-width:2500.0px;">
+                <a href="http://www.ubereats.com" target="_blank">
+                  <div class="block-image-wrapper">
+                    <img class="thumb-img" src="./images/dessert3.jpeg" alt="dessert image" style="width: 150%; left: -20%;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-center" style="height: 200px; padding: 15px;">
+          <p class="w3-large">Fudgy Brownies or Caramel Blondies $5</p>
+          <p>One order comes with three brownies or three caramel blondies. </p>
+        </div>
+        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-button w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-margin-top">
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <pre>
+(480) 409-4591
+slickables@slickables.com
+COPYRIGHT 2017
+    </pre>
+  </footer>
+  <script src="./scripts/w3responsive.js"></script>
 </body>
 
 </html>
