@@ -61,6 +61,41 @@ html {
 }
 
 .order-btn {
+    width:50%;
+    margin: 10px;
+    min-width: 180px;
+}
+
+.image-block {
+    padding-top: 17px;
+    clear: both;
+    display: block;
+}
+
+.image-block-outer-wrapper {
+    flex: 0 1 auto;
+    text-align: left;
+}
+
+.intrinsic {
+    max-width: 2500px;
+    margin: auto;
+}
+
+.block-image-wrapper {
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumb-img {
+    width: 100%;
+    position: absolute;
+    max-width: none;
+}
+
+.fixed-height-1 {
+  height: 170px;
   width: 50%;
   margin: 10px;
   min-width: 180px;
