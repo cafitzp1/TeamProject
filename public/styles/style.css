@@ -5,30 +5,37 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 body,
 html {
-    height: 100%;
-    line-height: 1.8;
+  height: 100%;
+  line-height: 1.8;
 }
 
 /* Full height image header */
 .bgimg-1 {
-    background-position: initial;
-    background-size: cover;
-    /*background-image: url("../images/yummy1.jpeg");*/
-    min-height: 100%;
+  background-position: initial;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.slideshow-container {
+  max-height: -webkit-fill-available;
+  contain: content;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .w3-bar .w3-button {
-    padding: 12px;
+  padding: 12px;
 }
 
 .w3-button:hover {
-    color: #000 !important;
-    background-color: rgb(240, 240, 240) !important
+  color: #000 !important;
+  background-color: rgb(240, 240, 240) !important
 }
 
 .w3-row-padding,
@@ -38,28 +45,30 @@ html {
 .w3-row-padding>.w3-threequarter,
 .w3-row-padding>.w3-quarter,
 .w3-row-padding>.w3-col {
-    padding: 0 14px
+  padding: 0 14px
 }
 
 .field-block {
-    min-height: 22rem;
-    max-width: 100%;
-    background-color: #eeeeee;
-    border: 2px solid transparent;
-    outline: none;
-    border: .2s ease-in-out;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  min-height: 22rem;
+  max-width: 100%;
+  background-color: #eeeeee;
+  border: 2px solid transparent;
+  outline: none;
+  border: .2s ease-in-out;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-btn {
-    width:50%;
-    margin: 10px;
-    min-width: 180px;
+  width: 50%;
+  margin: 10px;
+  min-width: 180px;
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 /*.slideshow-container {
@@ -68,14 +77,13 @@ html {
   margin: auto;
   
 }*/
-
-
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -96,8 +104,9 @@ html {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -132,7 +141,8 @@ html {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -145,11 +155,21 @@ html {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
