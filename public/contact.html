@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./styles/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -34,22 +35,35 @@
         <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
     </nav>
     <!-- Content Section -->
-    <div class="w3-container" style="padding:80px 2px 80px 2px" id="content">
+    <div class="w3-container bgimg-2" style="padding:80px 2px 80px 2px" id="content">
         <div class="w3-row-padding w3-center">
-            <div class="w3-text-black">
-                <h1>Need to contact us?</h1>
-                <p class="w3-large" style="padding-bottom: 25px;">If you did not find answers in our FAQ page, please
+            <div class="w3-display-center w3-text-black w3-block">
+                <span class="w3-jumbo">Need to contact us?</span><br>
+                <p class="w3-large">If you did not find answers in our FAQ page, please
                     describe any questions or concerns you may have in detail below.</p>
             </div>
         </div>
+
+        <!-- Form stuff -->
         <div class="w3-row-padding w3-center" style="margin: 0px 10rem;">
-            <textarea maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="description" name="description"
-                required="" value=""></textarea>
+            <form class="w3-container">
+                <!-- input (type text for first three) -->
+                <h3 class="w3-left">Name:</h3>
+                <input class="w3-input" id="nameentry" name="nameentry" type="text">
+                <h3 class="w3-left">Subject</h3>
+                <input class="w3-input" id="subjectline" name="subjectline" type="text">
+                <h3 class="w3-left">Contact Email</h3>
+                <input class="w3-input" id="contactemail" name="contactemail" type="text">
+                <h3 class="w3-left">Message to Slickables:</h3>
+                <textarea class="w3-input" maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="messagebox"
+                    name="messagebox" required="" value=""></textarea>
                 <button class="w3-button w3-black" style="width: 35%; margin-top: 30px;">Send Message</button>
+            </form>
         </div>
     </div>
+    </div>
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-margin-top">
+    <footer class="w3-center w3-black w3-padding-64">
         <div class="w3-xlarge w3-section">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram w3-hover-opacity"></i>
