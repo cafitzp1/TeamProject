@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./styles/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -34,7 +35,7 @@
         <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
     </nav>
     <!-- Content Section -->
-    <div class="w3-container" style="padding:80px 2px 80px 2px" id="content">
+    <div class="w3-container bgimg-2" style="padding:80px 2px 80px 2px" id="content">
         <div class="w3-row-padding w3-center">
             <div class="w3-text-black">
                 <h1>Need to contact us?</h1>
@@ -42,11 +43,23 @@
                     describe any questions or concerns you may have in detail below.</p>
             </div>
         </div>
+
+        <!-- Form stuff -->
         <div class="w3-row-padding w3-center" style="margin: 0px 10rem;">
-            <textarea maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="description" name="description"
-                required="" value=""></textarea>
+            <div class="user-form-entry">
+                <!-- input (type text for first three) -->
+                <p>Name:</p>
+                <input class="formstuff" id="nameentry" name="nameentry" type="text">
+                <p>Subject</p>
+                <input class="formstuff" id="subjectline" name="subjectline" type="text">
+                <p>Contact Email</p>
+                <input class="formstuff" id="contactemail" name="contactemail" type="text">
+                <p>Message to Slickables:</p>
+                <textarea class="formstuff" maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="messagebox" name="messagebox"
+                    required="" value=""></textarea>
                 <button class="w3-button w3-black" style="width: 35%; margin-top: 30px;">Send Message</button>
-        </div>
+            </div>
+        </div>  
     </div>
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-margin-top">
