@@ -32,7 +32,7 @@ html {
 .bgimg-2 {
     background-position: initial;
     background-size: cover;
-    background-image: url("../images/ContactPageImg2.jpeg");
+    background-image: url("../images/contact-backgrounds.png");
     min-height: 100%;
 }
 
@@ -246,4 +246,22 @@ html {
   to {
     opacity: 1
   }
+}
+
+td.product-results,img.productImages{
+  height:200px;
+  width: 300px;
+  padding-bottom:20px;
+}
+#form-background{
+  width:50px;
+  height:100px;
+  background-color:aquamarine;
+  position: relative;
+  z-index: 3;
+}
+
+#contact-container{
+  background-color:aquamarine;
+  position: relative;
 }

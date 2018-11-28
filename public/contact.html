@@ -15,10 +15,11 @@
         <div class="w3-bar w3-white w3-card" id="myNavbar">
             <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
             <!-- Right-sided navbar links -->
+            <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
-                <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-question"></i> FAQ</a>
-                <a href="#" class="w3-bar-item w3-button w3-disabled"><i class="fa fa-shopping-cart"></i> Menu</a>
-                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+                <a href="./faq-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
+                <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Products</a>
+                <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -36,27 +37,35 @@
     </nav>
     <!-- Content Section -->
     <div class="w3-container bgimg-2" style="padding:80px 2px 80px 2px" id="content">
-        <div class="w3-row-padding w3-center">
+        <div class="w3-row-padding w3-center w3-block">
             <div class="w3-display-center w3-text-black w3-block">
-                <span class="w3-jumbo">Need to contact us?</span><br>
+                <span class="w3-xxxlarge">Need to contact us?</span><br>
                 <p class="w3-large">If you did not find answers in our FAQ page, please
                     describe any questions or concerns you may have in detail below.</p>
             </div>
         </div>
 
         <!-- Form stuff -->
-        <div class="w3-row-padding w3-center" style="margin: 0px 10rem;">
+        <div class="w3-row-padding w3-center" style="margin: 0px 25rem;">
             <form class="w3-container">
                 <!-- input (type text for first three) -->
-                <h3 class="w3-left">Name:</h3>
-                <input class="w3-input" id="nameentry" name="nameentry" type="text">
-                <h3 class="w3-left">Subject</h3>
-                <input class="w3-input" id="subjectline" name="subjectline" type="text">
-                <h3 class="w3-left">Contact Email</h3>
-                <input class="w3-input" id="contactemail" name="contactemail" type="text">
-                <h3 class="w3-left">Message to Slickables:</h3>
-                <textarea class="w3-input" maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="messagebox"
-                    name="messagebox" required="" value=""></textarea>
+                <div class="w3-row">
+                   <div class="w3-col s3"> <p class="w3-left w3-large">Name:</p></div>
+                    <div class="w3-col s9"><input class="w3-input" id="nameentry" name="nameentry" type="text"></div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s3"><p class="w3-left w3-large">Subject</p></div>
+                    <div class="w3-col s9"><input class="w3-input" id="subjectline" name="subjectline" type="text"></div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s3"><p class="w3-left w3-large">Contact Email</p></div>
+                    <div class="w3-col s9"><input class="w3-input" id="contactemail" name="contactemail" type="text"></div>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s3"><p class="w3-left w3-large">Message to Slickables:</p></div>
+                    <div class="w3-col s9"><textarea class="w3-input" maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="messagebox"
+                        name="messagebox" required="" value=""></textarea></div>
+                </div>
                 <button class="w3-button w3-black" style="width: 35%; margin-top: 30px;">Send Message</button>
             </form>
         </div>
