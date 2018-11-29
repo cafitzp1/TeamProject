@@ -251,7 +251,8 @@ html {
 td.product-results,img.productImages{
   height:200px;
   width: 300px;
-  padding-bottom:20px;
+  border:2px solid #021a40;
+  
 }
 #form-background{
   width:50px;
@@ -265,3 +266,20 @@ td.product-results,img.productImages{
   background-color:aquamarine;
   position: relative;
 }
+div.product-info{
+  clear:both;
+  padding-left:10px;
+}
+button{
+  float:right;
+  font-size:12px; 
+  vertical-align: top;
+}
+.productTable .td-products{
+  margin-left:auto; 
+  margin-right:auto; 
+  margin-top:30px;
+  vertical-align: middle;
+  padding-left:50px;
+}
+
