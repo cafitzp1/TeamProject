@@ -8,86 +8,101 @@
 <link rel="stylesheet" href="./styles/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
-            <!-- Right-sided navbar links -->
-            <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small">
-                <a href="./faq-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
-                <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Products</a>
-                <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
-            </div>
-            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+  
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="./about-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> About</a>
+      <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Order</a>
+      <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
     </div>
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
-        id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">FAQ</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
-    </nav>
-    <!-- Content Section -->
-    <div class="w3-container bgimg-2" style="padding:80px 2px 80px 2px" id="content">
-        <div class="w3-row-padding w3-center w3-block">
-            <div class="w3-display-center w3-text-black w3-block">
-                <span class="w3-xxxlarge">Need to contact us?</span><br>
-                <p class="w3-large">If you did not find answers in our FAQ page, please
-                    describe any questions or concerns you may have in detail below.</p>
-            </div>
-        </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 
-        <!-- Form stuff -->
-        <div class="w3-row-padding w3-center" style="margin: 0px 25rem;">
-            <form class="w3-container">
-                <!-- input (type text for first three) -->
-                <div class="w3-row">
-                   <div class="w3-col s3"> <p class="w3-left w3-large">Name:</p></div>
-                    <div class="w3-col s9"><input class="w3-input" id="nameentry" name="nameentry" type="text"></div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col s3"><p class="w3-left w3-large">Subject</p></div>
-                    <div class="w3-col s9"><input class="w3-input" id="subjectline" name="subjectline" type="text"></div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col s3"><p class="w3-left w3-large">Contact Email</p></div>
-                    <div class="w3-col s9"><input class="w3-input" id="contactemail" name="contactemail" type="text"></div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col s3"><p class="w3-left w3-large">Message to Slickables:</p></div>
-                    <div class="w3-col s9"><textarea class="w3-input" maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="messagebox"
-                        name="messagebox" required="" value=""></textarea></div>
-                </div>
-                <button class="w3-button w3-black" style="width: 35%; margin-top: 30px;">Send Message</button>
-            </form>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+  id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- Contact Section -->
+<div class="w3-container bgimg-contact" style="padding:128px 16px">
+  <div class="w3-row-padding w3-center w3-block">
+    <div class="w3-display-center w3-text-black w3-block">
+      <h3 class="w3-center">CONTACT US</h3>
+      <div class="w3-row">
+        <div class="w3-col m0 l1">&nbsp;</div>
+        <div class="w3-col m12 l10"><p class="w3-medium">If you did not find answers in our about page, please describe any questions or concerns you may have in detail below.</p></div>
+        <div class="w3-col m0 l1">&nbsp;</div>
+      </div>
+      </div>
+
+    <!-- Form stuff -->
+    <div class="w3-row-padding w3-center">
+      <form class="w3-container w3-center">
+        <div class="w3-row">
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
+          <div class="w3-col s3 m2 l1"><p class="w3-left w3-large">Name</p></div>
+          <div class="w3-col s9 m6 l5"><input class="w3-input" id="nameentry" type="text"></div>
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
         </div>
-    </div>
-    </div>
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <div class="w3-row">
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
+          <div class="w3-col s3 m2 l1"><p class="w3-left w3-large">Subject</p></div>
+          <div class="w3-col s9 m6 l5"><input class="w3-input" id="subjectline" type="text"></div>
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
         </div>
-        <pre>
+        <div class="w3-row">
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
+          <div class="w3-col s3 m2 l1"><p class="w3-left w3-large">Email</p></div>
+          <div class="w3-col s9 m6 l5"><input class="w3-input" id="contactemail" type="text"></div>
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
+          <div class="w3-col s3 m2 l1"><p class="w3-left w3-large">Message</p></div>
+          <div class="w3-col s9 m6 l5"><textarea class="w3-input" maxbytes="4000" maxlength="4500" rows="" cols="" class="field-block" id="messagebox" name="messagebox" required="" value=""></textarea></div>
+          <div class="w3-col s0 m2 l3">&nbsp;</div>
+        </div>
+        <div class="w3-row w3-padding-64">
+          <div class="w3-col s0  m2 l3">&nbsp;</div>
+          <div class="w3-col s0  m6 l4">&nbsp;</div>
+          <div class="w3-col s12 m2 l2" style="padding: 0 0 24px 0;"><button class="w3-button w3-medium w3-black w3-block">Send Message</button></div>
+          <div class="w3-col s0  m2 l3">&nbsp;</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <pre>
 (480) 409-4591
 slickables@slickables.com
 COPYRIGHT 2017
-    </pre>
-    </footer>
-    <script src="./scripts/w3responsive.js"></script>
+  </pre>
+</footer>
+<script src="./scripts/w3responsive.js"></script>
 </body>
 
 </html>

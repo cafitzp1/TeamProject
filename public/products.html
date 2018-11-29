@@ -3,164 +3,206 @@
 <title>Slickables</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="./images/RSVP-01.png" />
+<link rel="shortcut icon" type="image/png" href="./images/logo.png" />
 <link rel="stylesheet" href="./styles/w3.css">
 <link rel="stylesheet" href="./styles/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
-            <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small">
-                <a href="./faq-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
-                <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Products</a>
-                <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
-            </div>
-            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </div>
 
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-    </a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-dropdown-hover w3-right">
+      <a href="#" class="w3-bar-item w3-button w3-medium" onclick="toggleCart()">
+        <i class="fa fa-shopping-cart"></i> Cart <span class="badge" style="display: none;">1</span>
+      </a>
     </div>
+  </div>
+</div>
 
+<!-- Shopping cart -->
+<div id="shopping-cart" class="shopping-cart" style="display: none;">
+  <div class="shopping-cart-header">
+    <i class="fa fa-shopping-cart cart-icon"></i>
+    <span class="badge" style="display: none;">1</span>
+    <div class="shopping-cart-total">
+      <span class="lighter-text">Total:</span>
+      <span id="shopping-cart-total" class="main-color-text">$0</span>
     </div>
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
-        id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">FAQ</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Products</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  </div> <!--end shopping-cart-header -->
 
-    </nav>
-    <!-- Content Section -->
-    <div class="w3-container" style="padding:80px 2px 80px 2px" id="content">
-        <div class="w3-row-padding w3-center">
-        </div>
-        <div class="w3-row-padding w3-center" style="margin: 0px 10rem;">
-            <table class= "productTable">
-                <tr>
-                    <td class="td-products" rowspan="2">
-                        <img class="productImages" src="./images/product1.png">
-                    </td>
-                    <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                        <div style="clear:both;padding-bottom:20px;">   
-                        <h4 style="float:left;"><em><strong>I Want a Choco-lot!</strong></em></h4>                 
-                        <h4 style="float:right;"><em><strong>$2.50</strong></em></h4> 
-                        </div>
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                        <div style="clear:both;"> 
-                        <h6 style="float:left;padding-bottom: 15px;">Made for the true chocolate lover, this ice cream sandwich is rolled in mini chocolate chips! All sandwiches are made fresh to order at one of our local stores. Stop in and taste this yummy treat or place your order for pick-up now online!</h6>
-                        <button onclick="w3_close()" id="chocolate" class="w3-black w3-btn">Add to Cart</button> 
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <br>
-            <table class= "productTable">
-                    <tr>
-                        <td class="td-products" rowspan="2">
-                            <img class="productImages" src="./images/Picture2.png">
-                        </td>
-                        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                            <div style="clear:both;padding-bottom:20px;">   
-                            <h4 style="float:left;"><em><strong>Majestic Mint!</strong></em></h4>                 
-                            <h4 style="float:right;"><em><strong>$2.50</strong></em></h4> 
-                            </div>
-                            <hr>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                            <div style="clear:both;"> 
-                            <h6 style="float:left; padding-bottom:15px;">Mint lovers around the world, we have the answer to all of your problems! The Mint Majesty cookie sandwich is the perfect combination of cool mint and warm cookie and it will have your tastebuds dancing.</h6>
-                            <button onclick="w3_close()" id="chocolate" class="w3-black w3-btn">Add to Cart</button> 
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <br>
-                <table class= "productTable">
-                        <tr>
-                            <td class="td-products" rowspan="2">
-                                <img class="productImages" src="./images/Picture3.png">
-                            </td>
-                            <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                                <div style="clear:both;padding-bottom:20px;">   
-                                <h4 style="float:left;"><em><strong>Chocolate Peanut-Butter Bites</strong></em></h4>                 
-                                <h4 style="float:right;"><em><strong>$1.50</strong></em></h4> 
-                                </div>
-                                <hr>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                                <div style="clear:both;"> 
-                                <h6 style="float:left; padding-bottom:15px;">Are you looking for a quick & small sugar fix? These little treats are sure to satisfy any sugar craving. They are a crowd favorite and can be found at our Tempe and Mesa locations.</h6>
-                                <button onclick="w3_close()" id="chocolate" class="w3-black w3-btn">Add to Cart</button> 
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                    <br>
-                    <br>
-                    <br>
-                    <table class= "productTable">
-                            <tr>
-                                <td class="td-products" rowspan="2">
-                                    <img class="productImages" src="./images/Picture4.png">
-                                </td>
-                                <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                                    <div style="clear:both;padding-bottom:20px;">   
-                                    <h4 style="float:left;"><em><strong>Unbelievable Brownie Bite</strong></em></h4>                 
-                                    <h4 style="float:right;"><em><strong>$2.00</strong></em></h4> 
-                                    </div>
-                                    <hr>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="td-products" style="width:100%; text-align: left; padding-left:50px;"> 
-                                    <div style="clear:both;"> 
-                                    <h6 style="float:left;padding-bottom: 15px;">We challenge the idea that a brownie can survive without ice cream! In fact, our Brownie Bites prove just how perfectly ice cream and rich brownies compliment eachother. Try one today. </h6>
-                                    <button onclick="w3_close()" id="chocolate" class="w3-black w3-btn">Add to Cart</button> 
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-        </div>
+  <ul id="shopping-cart-items" class="shopping-cart-items">
+    <!-- <li class="clearfix">
+      <span class="item-name">Sony DSC-RX100M III</span>
+      <span class="item-price">$849.99</span>
+      <span class="item-quantity">Quantity: 01</span>
+    </li> -->
+    <span id="empty-cart">Cart is empty...</span>
+  </ul>
+
+  <div class="shopping-cart-footer">
+    <span>Subtotal</span>
+    <div class="shopping-cart-total">
+      <span id="shopping-cart-subtotal">$0</span>
     </div>
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-margin-top">
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <pre>
+    <br>
+    <span>Delivery Fee</span>
+    <div class="shopping-cart-total">
+      <span id="shopping-cart-delivery-fee">$0</span>
+    </div>
+    <br>
+    <span>Sales Tax</span>
+    <div class="shopping-cart-total">
+      <span id="shopping-cart-sales-tax">$0</span>
+    </div>
+  </div> <!--end shopping-cart-footer -->
+
+  <button class="w3-btn w3-block w3-blue w3-medium w3-margin-bottom">
+    Checkout
+  </button>
+</div> <!--end shopping-cart -->
+
+<!-- Products Section -->
+<div id="products" class="w3-container" style="padding:128px 16px">
+  <div class="w3-row-padding w3-center product-section" style="margin: 0px 10rem;">
+    <h3 class="w3-center">PRODUCTS</h3>
+    <br>
+    <table class="productTable">
+      <tr>
+        <td class="td-products" rowspan="2">
+          <img class="productImages" src="./images/product1.png">
+        </td>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;padding-bottom:20px;">
+            <h4 style="float:left;"><em><strong>I Want a Choco-lot!</strong></em></h4>
+            <h4 style="float:right;"><em><strong>$2.50</strong></em></h4>
+          </div>
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;">
+            <h6 style="float:left;padding-bottom: 15px;">Made for the true chocolate lover, this ice cream sandwich
+              is rolled in mini chocolate chips! All sandwiches are made fresh to order at one of our local stores.
+              Stop in and taste this yummy treat or place your order for pick-up now online!</h6>
+            <button onclick="addToCart(1, 'Choco-lot Ice Cream Sandwich', 2.50)" id="chocolate" class="w3-black w3-btn">
+              Add to Cart
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="productTable">
+      <tr>
+        <td class="td-products" rowspan="2">
+          <img class="productImages" src="./images/product2.png">
+        </td>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;padding-bottom:20px;">
+            <h4 style="float:left;"><em><strong>Majestic Mint!</strong></em></h4>
+            <h4 style="float:right;"><em><strong>$2.50</strong></em></h4>
+          </div>
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;">
+            <h6 style="float:left; padding-bottom:15px;">Mint lovers around the world, we have the answer to all of
+              your problems! The Mint Majesty cookie sandwich is the perfect combination of cool mint and warm cookie
+              and it will have your tastebuds dancing.</h6>
+            <button onclick="addToCart(2, 'Majestic Mint Ice Cream Sandwich', 2.50)" id="chocolate" class="w3-black w3-btn">
+              Add to Cart
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="productTable">
+      <tr>
+        <td class="td-products" rowspan="2">
+          <img class="productImages" src="./images/product3.png">
+        </td>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;padding-bottom:20px;">
+            <h4 style="float:left;"><em><strong>Chocolate Peanut-Butter Bites</strong></em></h4>
+            <h4 style="float:right;"><em><strong>$1.50</strong></em></h4>
+          </div>
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;">
+            <h6 style="float:left; padding-bottom:15px;">Are you looking for a quick & small sugar fix? These little
+              treats are sure to satisfy any sugar craving. They are a crowd favorite and can be found at our Tempe
+              and Mesa locations.</h6>
+            <button onclick="addToCart(3, 'Chocolate Peanut-Butter Bites', 1.50)" id="chocolate" class="w3-black w3-btn">
+              Add to Cart
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="productTable">
+      <tr>
+        <td class="td-products" rowspan="2">
+          <img class="productImages" src="./images/product4.png">
+        </td>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;padding-bottom:20px;">
+            <h4 style="float:left;"><em><strong>Unbelievable Brownie Bite</strong></em></h4>
+            <h4 style="float:right;"><em><strong>$2.00</strong></em></h4>
+          </div>
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-products" style="width:100%; text-align: left; padding-left:50px;">
+          <div style="clear:both;">
+            <h6 style="float:left;padding-bottom: 15px;">We challenge the idea that a brownie can survive without ice
+              cream! In fact, our Brownie Bites prove just how perfectly ice cream and rich brownies compliment
+              eachother. Try one today. </h6>
+            <button onclick="addToCart(4, 'Unbelievable Brownie Bite', 2.00)" id="chocolate" class="w3-black w3-btn">
+              Add to Cart
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-margin-top">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <pre>
+(480) 409-4591
+slickables@slickables.com
 COPYRIGHT 2017
-    </pre>
-    </footer>
-    <script src="./w3responsive.js"></script>
+  </pre>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./scripts/w3responsive.js"></script>
 </body>
 
 </html>

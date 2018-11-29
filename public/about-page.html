@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Slickables</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="./images/logo.png" />
+<link rel="stylesheet" href="./styles/w3.css">
+<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
+    <div class="w3-right w3-hide-small">
+      <a href="./about-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> About</a>
+      <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Order</a>
+      <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+  id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px">
+  <h3 class="w3-center">ABOUT SLICKABLES</h3>
+    <div class="w3-row w3-center">
+      <div class="w3-col s0 m1 l2">&nbsp;</div>
+      <div class="w3-col s12 m10 l8"><p>Home of the $2.50 ice cream sandwich! Slickables Ice Cream Sandwich is a family owned, family run dessert shop dedicated to offering great products at great prices. Our specialty is the ice cream sandwich which we sell for $2.50. You can choose any two freshly baked cookies and any flavor premium ice cream and we'll make it into a sandwich for you! Slickables - "Sandwiches That Are Lickables." What will be your favorite slickable? Also available: brownie sundaes and milkshakes.</p></div>
+      <div class="w3-col s0 m1 l2">&nbsp;</div>
+    </div>
+    <div class="w3-row w3-center" style="padding-top: 64px;">
+      <img class="about-icon" src="https://s3-us-west-2.amazonaws.com/aws-connor/dev/icons/icons8-cookie-filled-50.png" alt="cookie icon">
+      <img class="about-icon" src="https://s3-us-west-2.amazonaws.com/aws-connor/dev/icons/icons8-plus-math-filled-50.png" alt="plus icon">
+      <img class="about-icon" src="https://s3-us-west-2.amazonaws.com/aws-connor/dev/icons/icons8-ice-cream-sundae-filled-50.png" alt="ice cream icon">
+      <img class="about-icon" src="https://s3-us-west-2.amazonaws.com/aws-connor/dev/icons/icons8-equal-sign-filled-50.png" alt="equal sign icon">
+      <img class="about-icon" src="https://s3-us-west-2.amazonaws.com/aws-connor/dev/icons/icons8-happy-filled-50.png" alt="happy icon">
+    </div>
+</div>
+
+<!-- Social Media Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <h3 class="w3-center">SOCIAL MEDIA</h3>
+  <p class="w3-center w3-large">Bringing you your social media dessert craving on the daily!</p>
+  <div class="w3-row-padding" style="margin-top:64px;">
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta1.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta2.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta3.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta4.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox"></a>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta5.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta6.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta7.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.instagram.com/slickables/"><img src="https://s3-us-west-2.amazonaws.com/aws-connor/asu/cis425/images/insta8.png" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner"></a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="w3-container" style="padding:128px 16px">
+    <h3 class="w3-center">FREQUENTLY ASKED QUESTIONS</h3>
+    <p class="w3-center w3-large">Some of the most common questions that our loyal customers ask. Feel free to contact us if you have any other questions!</p>
+    <br>
+    <div class="w3-row-padding w3-center w3-container">
+      <div class="w3-row">
+        <div class="w3-col s0 m1 l2">&nbsp;</div>
+        <div class="w3-col s3 m2 l2 w3-left-align"><p><strong>Who are we?</strong></p></div>
+        <div class="w3-col s9 m8 l6 w3-left-align"><p>We are a Seattle based company that focuses on reducing the stress associated with event planning. We are founded by a group of Arizona State graduates that understand the pressure behind searching for the perfect event venue and aim to reduce that stress.</p></div>
+        <div class="w3-col s0 m1 l0">&nbsp;</div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col s0 m1 l2">&nbsp;</div>
+        <div class="w3-col s3 m2 l2 w3-left-align"><p><strong>What do we do?</strong></p></div>
+        <div class="w3-col s9 m8 l6 w3-left-align"><p>We partner with Seattle companies to offer a variety of venue types, locations, and styles. We do the work so that you don't have to. Think of us as your one-stop-shop for venue search and reservation.</p></div>
+        <div class="w3-col s0 m1 l0">&nbsp;</div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col s0 m1 l2">&nbsp;</div>
+        <div class="w3-col s3 m2 l2 w3-left-align"><p><strong>Where are we?</strong></p></div>
+        <div class="w3-col s9 m8 l6 w3-left-align"><p>Currently, our services are only available in Seattle, Washington. However,our goal is to expand across the nation!</p></div>
+        <div class="w3-col s0 m1 l0">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <pre>
+(480) 409-4591
+slickables@slickables.com
+COPYRIGHT 2017
+  </pre>
+</footer>
+<script src="./scripts/w3responsive.js"></script>
+</body>
+
+</html>

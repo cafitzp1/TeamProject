@@ -15,8 +15,8 @@
       <a href="./index.html" class="w3-bar-item w3-button w3-wide">Slickables</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="./faq-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
-        <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Products</a>
+        <a href="./about-page.html" class="w3-bar-item w3-button"><i class="fa fa-question"></i> About</a>
+        <a href="./products.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Order</a>
         <a href="./contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -29,51 +29,40 @@
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
     id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">FAQ</a>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Products</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Order</a>
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
   </nav>
+
   <!-- Header with full-height image -->
-  <header class="w3-display-container" id="home">
-    <!-- Slideshow container -->
-    <div class="slideshow-container w3-display-container">
-      <div class="mySlides">
-        <img class="bgimg-1" src="./images/yummy1.jpeg" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <img class="bgimg-1" src="./images/yummy2.jpeg" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <img class="bgimg-1" src="./images/yummy3.jpeg" style="width:100%">
-      </div>
-      <!-- Header text -->
-      <div class="w3-display-left w3-text-white" style="padding:24px; background-color:rgba(0, 0, 0, .6);margin:24px;">
-        <span class="w3-jumbo">Slickables</span><br>
-        <span class="w3-large">(480) 409 - 4591</span><br>
-        <span class="w3-large">VISIT OUR STORES OR GET YUMMINESS DELIVERED</span>
-        <p><a href="./products.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">See
-            Menu</a></p>
-      </div>
-      <!-- Social media images -->
-      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-      </div>
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <header class="w3-display-container bgimg-1" id="home">
+    <!-- Menu text and button -->
+    <div class="w3-display-left w3-text-white" style="padding:24px; background-color:rgba(0, 0, 0, .6); margin:24px;">
+      <span class="w3-jumbo">Slickables</span><br>
+      <span class="w3-large">(480) 409 - 4591</span><br>
+      <span class="w3-large">VISIT OUR STORES OR GET YUMMINESS DELIVERED</span>
+      <p><a href="./products.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Order Online</a></p>
+    </div>
+    <!-- Social media images -->
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
     <!-- The dots/circles -->
-    <div class="w3-margin-top" style="text-align:center;">
+    <div class="w3-display-bottommiddle w3-padding-16 w3-center">
+      <span class="dot active" onclick="currentSlide(0)"></span>
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </header>
+
   <!-- About Section -->
   <div class="w3-container" style="padding:5px 2px 80px 2px" id="about">
     <div class="w3-row-padding w3-center">
@@ -104,8 +93,8 @@
             chocolate with mint chip
             ice cream, a customer favorite.</p>
         </div>
-        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
-        <button class="w3-button w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
+        <button class="w3-btn w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-btn w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
       </div>
       <div class="w3-third">
         <div class="image-block" data-aspect-ratio="100" data-block-type="5">
@@ -126,8 +115,8 @@
           <p>Choose a dozen of our cookies which are made from scratch and baked fresh every day
             and through out the day.</p>
         </div>
-        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
-        <button class="w3-button w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
+        <button class="w3-btn w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-btn w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
       </div>
       <div class="w3-third">
         <div class="image-block" data-aspect-ratio="100" data-block-type="5">
@@ -147,8 +136,8 @@
           <p class="w3-large">Fudgy Brownies or Caramel Blondies $5</p>
           <p>One order comes with three brownies or three caramel blondies. </p>
         </div>
-        <button class="w3-button w3-red order-btn">Order With GRUBHUB</button>
-        <button class="w3-button w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
+        <button class="w3-btn w3-red order-btn">Order With GRUBHUB</button>
+        <button class="w3-btn w3-black order-btn w3-margin-bottm">ORDER ON UBER EATS</button>
       </div>
     </div>
   </div>
@@ -168,6 +157,7 @@ slickables@slickables.com
 COPYRIGHT 2017
     </pre>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./scripts/w3responsive.js"></script>
 </body>
 
