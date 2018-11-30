@@ -1,44 +1,46 @@
 # Team Project #
 
-## B11-JCMR ##
+<!-- This file uses Markdown and is best viewed in a Markdown file viewer. An alternative is to simply view the file online at https://github.com/cafitzp1/TeamProject (scroll down a bit once on the page) -->
+
+## B11-JCMR - Team Members ##
 
 - `J`ared Mole
 - `C`onnor Fitzpatrick
 - `M`eg Myers
 - `R`achel Busch
 
-## Dependencies ##
+## Starting the Web Page ##
 
-### Extensions ###
+Our page can be launched using the standard `node <rel-file-path>` command, however a better way is to use `npm start`. This will run a script which runs the correct `node` command by default. This command will work as long as you are anywhere within the project directory in your CLI. The page is then viewed by navigating to `localhost:3000` or `127.0.0.1:3000` in the browser of your choosing (Express web servers use port 3000 by default). HTTP requests will appear in the CLI as requests are made to the server.
 
-- Node.JS Extension Pack
-- JSHint
-- GitLens
-- Live Server
-- Open in Browser
-- TODO Highlight
-- Markdown All In One
+## Solution File Structure ##
 
-## App File Structure ##
+    .
+    ├── bin
+    │   └── www
+    ├── node_modules
+    ├── public
+    │   ├── images
+    │   ├── scripts
+    │   ├── styles
+    │   ├── about-page.html
+    │   ├── contact.html
+    │   ├── index.html
+    │   └── products.html
+    ├── routes
+    │   ├── index.js
+    │   └── users.js
+    ├── app.js
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-```txt
-.
-├── app.js
-├── bin
-│   └── www
-├── package.json
-├── public
-│   ├── images
-│   ├── javascripts
-│   └── stylesheets
-│       └── style.css
-├── routes
-│   ├── index.js
-│   └── users.js
-└── views
-    ├── error.pug
-    ├── index.pug
-    └── layout.pug
+### Explanation ###
 
-7 directories, 9 files
-```
+- __bin/__ - contains our app server file: `www`
+- __node_modules/__ - contains node modules required for certain functionalities (mostly for the Express server)
+- __public/__ - contains all the static files which get served to clients (js, css, html, images, etc)
+- __routes/__ - a place for defining route definitions used in `app.js`
+- __app.js__ - initializes the app and glues everything together
+- __package-lock.json__ - describes the exact tree that was generated for `node_modules/` modifications (for subsequent installs)
+- __package.json__ - lists all the packages our solution depends on
