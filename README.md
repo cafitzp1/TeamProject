@@ -9,6 +9,12 @@
 - `M`eg Myers
 - `R`achel Busch
 
+## Quick View ##
+
+A serverless version of our website can be viewed at any time by visiting https://s3-us-west-2.amazonaws.com/asu-cis425-teamproject/index.html
+
+![JCMR Team Project Homepage](./public/images/homepage.png)
+
 ## Starting the Web Page ##
 
 Our page can be launched using the standard `node <rel-file-path>` command, however a better way is to use `npm start`. This will run a script which runs the correct `node` command by default. This command will work as long as you are anywhere within the project directory in your CLI. The page is then viewed by navigating to `localhost:3000` or `127.0.0.1:3000` in the browser of your choosing (Express web servers use port 3000 by default). HTTP requests will appear in the CLI as requests are made to the server.
