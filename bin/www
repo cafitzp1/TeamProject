@@ -89,6 +89,7 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
+// IIFE for displaying the port
 {
   console.log("listening on port 3000...\n");
 }

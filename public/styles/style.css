@@ -58,13 +58,6 @@ html {
   background-position: center;
 }
 
-/* .bgimg-2 {
-    background-position: initial;
-    background-size: cover;
-    background-image: url("../images/bgimg-contact.png");
-    min-height: 100%;
-} */
-
 .w3-bar .w3-button {
   padding: 12px;
 }
@@ -173,13 +166,6 @@ html {
   box-sizing: border-box
 }
 
-/* Slideshow container */
-/*.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  
-}*/
 .mØSlides {
   display: none;
 }

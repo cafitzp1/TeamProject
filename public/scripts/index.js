@@ -18,11 +18,12 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+// For showing the different slides on the homepage
 function showSlides(n) {
     let i;
     let dots = document.getElementsByClassName("dot");
 
-    // keep slides between 0 and cap
+    // keep slides between 0 and slides avail
     slideIndex = n % slidesAvailable == -1 ? 2 : n % slidesAvailable;
 
     // reset class for background image
@@ -35,33 +36,12 @@ function showSlides(n) {
     dots[slideIndex].className += " active";
 }
 
-// Modal Image Gallery
-function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-}
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-
 // open/close the cart
 function toggleCart() {
     $('#shopping-cart').toggle();
 }
 
+// adds items to the cart
 function addToCart(id, name, price) {
     totalCartItems++;
 
@@ -104,6 +84,7 @@ function addToCart(id, name, price) {
     }
 }
 
+// clears the cart (never actually used anywhere)
 function clearCart() {
     totalCartItems = 0;
 
@@ -119,4 +100,27 @@ function clearCart() {
     // reset appearances 
     $("#empty-cart").show();
     $(".badge").hide();
+}
+
+// modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+}
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+const mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// closes the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
 }
